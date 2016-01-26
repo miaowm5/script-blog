@@ -35,21 +35,6 @@
 #list .script-list{ display: none }
 #list .show_area.card{ margin: 1.5em 0em; }
 #list .show_area.card ul{ line-height: 3; }
-#list .show_area.card h3{
-  border-bottom: 1px solid #ddd;
-  color: #999;
-  margin: 2em 0 1em;
-}
-#list .show_area.card h3:first-child{ margin-top: 0; }
-#list .show_area.card a{
-  color: #7563EA;
-  border-radius: 3px;
-  padding: .2em .5em;
-}
-#list .show_area.card a:hover{
-  color: white;
-  background-color: #7563EA;
-}
 #list .show_area .update_info{
   font-size: 0.9em;
   color: #999;

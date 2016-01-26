@@ -13,6 +13,13 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
   right: 0 !important;
   width: 7em !important;
 }
+#ds-reset .ds-replybox>.ds-avatar{
+  margin-left: 0 !important;
+  margin-top: 2px !important;
+}
+#ds-reset .ds-replybox{
+  padding-left: 40px !important;
+}
 #ds-reset .ds-post-options .ds-sync{
   right: 0 !important;
   top: 3em !important;
@@ -88,7 +95,7 @@ body{
   border-radius: 6px;
   box-shadow: 0px 0px 10px #EAF5FF;
   transition: box-shadow 0.2s;
-  padding: 2em 3em;
+  padding: 2em 3em 2.5em;
 }
 .card:hover{ box-shadow: 0px 0px 10px #f1c0F6; }
 .big-title{ margin-bottom: 1em; }
@@ -113,6 +120,22 @@ body{
 /*.no-cssgradients .no-rgba*/
 .no-cssgradients #list .toggle-button:hover,.no-rgba #list .toggle-button:hover{
   background: #ddd;
+}
+
+.card-inline-title{
+  border-bottom: 1px solid #ddd;
+  color: #999;
+  margin: 2em 0 1em;
+}
+.card-inline-title:first-child{ margin-top: 0; }
+a.normal-link{
+  color: #7563EA;
+  border-radius: 3px;
+  padding: .2em .5em;
+}
+a.normal-link:hover{
+  color: white;
+  background-color: #7563EA;
 }
 
 #header{
