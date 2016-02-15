@@ -57,8 +57,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 body{
   font-size: 14px;
   font-family: "方正兰亭黑","微软雅黑", Arial, Helvetica, "sans-serif";
-  margin: 3em;
-  margin-top: 1em;
+  margin: 0;
   background-color: #eee;
   background-image: url("../img/background.png");
   color: #333;
@@ -70,7 +69,7 @@ body{
   margin: auto;
   overflow: hidden;
 }
-#content>div{
+#content>.viewport>div{
   padding: 2em 3em 0em;
 }
 a>img{
@@ -149,21 +148,19 @@ a.normal-link:hover{
 }
 
 #header{
-  padding: 0em 1.5em;
   background-color: #091132;
   background-image: url(../img/header.jpg);
-  box-shadow: 0px 0px 50px black inset;
-  border-radius: 10px;
+  box-shadow: 0px -10px 50px black inset;
   background-size: cover;
-  background-position: center 10%;
+  background-position: center 20%;
   text-align: center;
 }
 /*no bgsizecover*/
 .no-bgsizecover #header{ background-size: 100%; }
 #header>div{
   color: white;
-  padding: 2em 1.5em 1em;
-  text-shadow: 0px 1px 6px black;
+  padding: 2em 1.5em 3em;
+  text-shadow: 0px 1px 10px black, 0px 0px 5px black;
 }
 #header h1{
   font-weight: bold;
@@ -173,10 +170,14 @@ a.normal-link:hover{
 #header ul li{ display: inline-block; }
 #header a{
   color: white;
-  padding: 0em 1em 1em;
+  padding: 1em 1.2em 1em;
   font-size: 0.9em;
 }
-#header a:hover{ border-bottom: 3px solid white; }
+#header a:hover{
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 10px 10px 0 0;
+  border-bottom: 3px solid white;
+}
 
 #footer{
   text-align: center;
@@ -190,18 +191,10 @@ a.normal-link:hover{
 }
 #footer a:hover{ color: #333; }
 
-@media screen and (max-width: 1050px) {
-  body{ margin: 0em; }
-  #header{
-    padding: 0em 0em;
-    border-radius: 0px;
-  }
-  .viewport{ max-width:2000px; }
-}
 @media screen and (max-width: 600px) {
   body{ font-size: 12px; }
   a>img{ transition: none; }
-  #content>div{ padding: 2em .5em 0em; }
+  #content>.viewport>div{ padding: 2em .5em 0em; }
   .toggle-button:hover{ background: #ddd; }
   .card{
     transition: none;

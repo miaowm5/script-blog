@@ -38,23 +38,23 @@ siteGlobal.favicon = new Favico({ animation:'fade' })
 siteGlobal.loadState = 0
 // loadPublicPage
 siteGlobal.loadPublicPage = function(){
-  $('#footer').html([
-    '<div>',
-      '<p>This page is designed by miaowm5(2016)</p>',
-      '<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=54103699" target="_blank">',
-        'Banner Picture: 暮明♨二日目J30b',
-      '</a>',
-    '</div>'
-  ].join(''))
   $('#header').html([
-    '<div>',
+    '<div class="viewport">',
       '<h1>喵呜喵5的原创脚本列表</h1>',
       '<ul>',
         '<li><a href="http://rm.66rpg.com/?291206">返回空间</a></li>',
         '<li><a href="list.html">脚本列表</a></li>',
         '<li><a href="order.html">脚本定制</a></li>',
       '</ul>',
-    '</div>',
+    '</div>'
+  ].join(''))
+  $('#footer').html([
+    '<div>',
+      '<p>This page is designed by miaowm5(2016)</p>',
+      '<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=54202688" target="_blank">',
+        'Banner Picture: BEEK',
+      '</a>',
+    '</div>'
   ].join(''))
   siteGlobal.loadState += 1
 }
