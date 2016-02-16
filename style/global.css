@@ -78,6 +78,7 @@ a>img{
 }
 a>img:hover{ opacity: 1.0; }
 
+#content{ display: none; }
 #loading{
   text-align: center;
   height: 100vh;
@@ -131,18 +132,61 @@ a>img:hover{ opacity: 1.0; }
   background: #ddd;
 }
 
+.switch_button{
+  position: relative;
+  line-height: 5em;
+  cursor: pointer;
+  padding: 0 2em;
+  border-radius: 1em;
+  border: 1px solid #e0e0e0;
+}
+.switch_button:hover{
+  background-color: #fcfcfc;
+}
+.switch_button>div{
+  display: inline-block;
+}
+.switch_button .switch-back{
+  height: 2em;
+  width: 4em;
+  margin: 1.5em 0;
+  position: absolute;
+  border-radius: 2em;
+  box-shadow: 0px 1px 5px #9BB0D2 inset;
+  right: 2em;
+  transition: all 1s;
+}
+.switch_button .switch-object{
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  border-radius: 2em;
+  background: white;
+  box-shadow: 0px 0px 3px #7486A4;
+  right: 2em;
+  transition: all 0.3s;
+}
+.switch_button.open .switch-back{
+  box-shadow: 0px 1px 5px #6D8D30 inset;
+  background: #32c532;
+}
+.switch_button.open .switch-object{
+  right: 0;
+}
+
 .card-inline-title{
   border-bottom: 1px solid #ddd;
   color: #999;
   margin: 2em 0 1em;
 }
 .card-inline-title:first-child{ margin-top: 0; }
-a.normal-link{
+
+.normal-link{
   color: #7563EA;
   border-radius: 3px;
   padding: .2em .5em;
 }
-a.normal-link:hover{
+.normal-link:hover{
   color: white;
   background-color: #7563EA;
 }
@@ -200,6 +244,9 @@ a.normal-link:hover{
     transition: none;
     padding: 2em 2em;
   }
+  .switch_button{ padding: 0 1.5em; }
+  .switch_button .switch-back{ right: 1.5em;}
+  .switch_button .switch-back, .switch_button .switch-object{ transition: none; }
   #header h1{ font-size: 1.5em; }
   #header>div{ padding: 2em .5em .5em; }
   #footer{ margin: 4em 0; }

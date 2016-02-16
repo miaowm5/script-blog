@@ -8,7 +8,6 @@
   <link rel="stylesheet" type="text/css" href="style/global.css">
   <script src='js/modernizr.js'></script>
   <style>
-    #content{ display: none; }
     #rule .image-list{
       text-align: center;
       margin: 1em 0;
@@ -38,19 +37,19 @@
     #list .update_hint:hover p.hover{ display: inline; }
     #list .show_area.card{ margin: 1.5em 0em; }
     #list .show_area.card ul{ line-height: 3; }
-    #list li>a.base-script:before{ content: "☆"; }
+    #setting .setting>.hint{ color: #999; }
+    #setting .setting>.hint{ margin-bottom: 1.5em; }
+    #list li.base-script>a:before{ content: "☆"; }
     #list .show_area .update_info{
       font-size: 0.9em;
       color: #999;
       margin-left: .5em;
     }
-    @media screen and (max-width: 1050px) {
-      #rule .rule-list li{ text-indent: 0em; }
-    }
-    @media screen and (max-width: 600px) {
-      #list .update_hint{ transition: none; }
-    }
+    @media screen and (max-width: 1050px) { #rule .rule-list li{ text-indent: 0em; } }
+    @media screen and (max-width: 600px) { #list .update_hint{ transition: none; } }
     .no-update #list .last_update,.no-update #list .update_info{ display: none; }
+    #list.github .no-github{ display: none; }
+    #list.filter-base .base-script{display: none;}
   </style>
 </head>
 <body>
@@ -107,6 +106,45 @@
         </div>
 
         <div class="script-list">
+          <div id="setting">
+            <h2 class="toggle-button">脚本设置</h2>
+            <div class="show_area card">
+
+              <div class="setting">
+                <h3 class="card-inline-title">修改数据源</h3>
+                <div class="switch_button" data-setting="1">
+                  <div class="hint"><p>使用 Github</p></div>
+                  <div class="switch-back"><div class="switch-object"></div></div>
+                </div>
+                <div class="hint">
+                  <p>使用 Github 取代 6R 作为脚本的数据源。脚本的读取速度取决于你访问<a class="normal-link" href="https://github.com/" target="_blank">Github</a>的速度。</p>
+                </div>
+              </div>
+
+              <div class="setting">
+                <h3 class="card-inline-title">过滤依赖性脚本</h3>
+                <div class="switch_button" data-setting="2">
+                  <div class="hint"><p>只显示无依赖的脚本</p></div>
+                  <div class="switch-back"><div class="switch-object"></div></div>
+                </div>
+                <div class="hint">
+                  <p>隐藏需要插入基础脚本后才能使用的脚本。</p>
+                </div>
+              </div>
+
+              <div class="setting">
+                <h3 class="card-inline-title">保存偏好设置</h3>
+                <div class="switch_button" data-setting="0">
+                  <div class="hint"><p>自动应用当前设置</p></div>
+                  <div class="switch-back"><div class="switch-object"></div></div>
+                </div>
+                <div class="hint">
+                  <p>将以上设置数据保存到 Cookie 中，下次访问网页时自动应用。</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
           <div class="last_update"><h2 class="toggle-button">更新记录</h2><div class="show_area card"></div></div>
           <div class="base"><h2 class="toggle-button">基础脚本</h2><div class="show_area card"><ul></ul></div></div>
           <div class="message"><h2 class="toggle-button">对话类脚本</h2><div class="show_area card"><ul></ul></div></div>
@@ -118,27 +156,16 @@
           <div class="others"><h2 class="toggle-button">其他脚本</h2><div class="show_area card"><ul></ul></div></div>
         </div>
       </div>
-      <div id="comment">
-        <div class="big-title">
-          <h1>发射言弹</h1>
-          <p class="title-hint">您的留言将被公开展示在这里。</p>
-        </div>
-        <div class="card"><div class="ds-thread"></div></div>
-      </div>
+      <div id="comment"></div>
       <footer id="footer"></footer>
     </div>
   </div>
 
   <script src="//cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
-  <!-- <script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script> -->
   <script type="text/javascript">
     !window.jQuery && document.write('<script src="js/jquery.js"><\/script>');
   </script>
   <script src='js/global.js'></script>
-  <script>
-    siteGlobal.articleID = 1
-    siteGlobal.checkLoad(2)
-  </script>
   <script src='js/list.js'></script>
 
 </body>
