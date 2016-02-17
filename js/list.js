@@ -142,8 +142,8 @@
   }
   function useSetting(){
     var saveSetting = function(setID, value){
-      if(value){ $.cookie("setting" + setID, '1') }
-      else{ $.cookie("setting" + setID, '0') }
+      if(value){ $.cookie("setting" + setID, '1', { expires: 365 }) }
+      else{ $.cookie("setting" + setID, '0', { expires: 365 }) }
     }
     $('#setting .switch_button').click(function(){
       var setID = $(this).attr('data-setting') - 0
