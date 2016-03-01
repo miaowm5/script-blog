@@ -41,8 +41,8 @@
         '<p class="title-hint">这个脚本需要搭配我的基础脚本共同使用。</p>'
       )
     }
-    var code = siteGlobal.decode(data.content.replace('\n','') )
-    code = code.replace('<','&lt').replace('>','&gt')
+    var code = siteGlobal.decode(data.content)
+    code = code.replace(/</g,'&lt').replace(/>/g,'&gt')
     dom.children('.card').append(
       siteGlobal.createContent.code({ 'id' : 1, 'code' : code, 'url' : data.download_url })
     )
