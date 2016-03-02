@@ -6,14 +6,13 @@
     return [time.substr(0,4), time.substr(4,2) - 0, time.substr(6) - 0].join('.')
   }
   function loadJson(){
-    siteGlobal.showUpdate = true
     var mainFunction = function(data){
       var list = ['base','message','map','system','battle','menu','event','others']
       $.each(list, function(i,cate){
         var dom = $('#list .' + cate + ' .show_area>ul')
         $.each(data[cate], function(_, script){ drawScript(script, dom, i) })
       })
-      if (siteGlobal.showUpdate){ drawUpdateList(data,6) }
+      drawUpdateList(data,6)
       setShowArea()
       useSetting()
       siteGlobal.loadState += 1
@@ -28,8 +27,6 @@
       success: mainFunction,
     }
     $.ajax(ajaxConfig).fail(function(p1,p2,p3){
-      $('html').addClass('no-update')
-      siteGlobal.showUpdate = false
       ajaxConfig.url = "http://miaowm5.github.io/script-blog/list.json"
       $.ajax(ajaxConfig)
     })
