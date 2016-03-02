@@ -19,7 +19,7 @@
       siteGlobal.loadState += 1
     }
     var ajaxConfig = {
-      url: "http://miaowm5.gitcafe.io/script-blog/list.json",
+      url: "http://miaowm5.coding.me/script-blog/list.json",
       scriptCharset:'UTF-8',
       dataType: "jsonp",
       jsonp: "callback",
