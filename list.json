@@ -1,7 +1,7 @@
 callback({
   "base":[
     { "name":"基础脚本","describe":"",
-      "time":"20160125", "update_info":"调整读取备注的代码",
+      "time":"20160320", "update_info":"修正读取备注时无法执行代码块的问题",
       "url":"13513", "github": 0 }
   ],
   "message":[
@@ -49,6 +49,12 @@ callback({
       "url":"13214", "github": 0 }
   ],
   "map":[
+    { "name":"地图显示变量","describe":"",
+      "time":"20160307", "update_info":"细节优化",
+      "url":"12023", "base": true, "github": 0 },
+    { "name":"事件提示","describe":"",
+      "time":"20160306", "update_info":"防止一处罕见的报错",
+      "url":"13986", "base": true, "github": 0 },
     { "name":"死亡时行走图改变","describe":"",
       "time":"20160119", "update_info":"简化代码，提升兼容性",
       "url":"13514", "base": true, "github": 0 },
@@ -64,12 +70,6 @@ callback({
     { "name":"地图名显示美化","describe":"",
       "time":"20150827", "update_info":"可以在设置部分关闭地图名滑动的特效了",
       "url":"12016", "github": 0 },
-    { "name":"地图显示变量","describe":"",
-      "time":"20150804", "update_info":"调整反转开关功能，减少歧义",
-      "url":"12023", "base": true, "github": 0 },
-    { "name":"事件提示","describe":"",
-      "time":"20150519", "update_info":"修正地图显示变量脚本造成的BUG",
-      "url":"13986", "base": true, "github": 0 },
     { "name":"遇敌率控制","describe":"",
       "time":"20150131", "update_info":"调整代码，增强兼容性",
       "url":"11938", "github": 0 },
@@ -169,6 +169,9 @@ callback({
       "url":"11572" }
   ],
   "menu":[
+    { "name":"能够遗忘技能的物品、技能","describe":"",
+      "time":"20160320", "update_info":"调整代码，功能增强",
+      "url":"12821", "base": true, "github": 0 },
     { "name":"自定义技能名字","describe":"",
       "time":"20160119", "update_info":"重写代码，功能增强",
       "url":"13374", "github": 0 },
@@ -196,9 +199,6 @@ callback({
     { "name":"物品排序","describe":"",
       "time":"20140807", "update_info":"公开",
       "url":"13543", "github": 0 },
-    { "name":"能够遗忘技能的道具","describe":"",
-      "time":"20140329", "update_info":"公开",
-      "url":"12821" },
     { "name":"伪-横向翻页的状态窗口","describe":"",
       "time":"20131120", "update_info":"公开",
       "url":"12326" }
