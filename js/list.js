@@ -119,9 +119,14 @@
   }
   function useSetting(){
     siteGlobal.setting = {}
-    var saveSetting = function(setID, value){
-      if(value){ $.cookie("setting" + setID, '1', { expires: 365 }) }
-      else{ $.cookie("setting" + setID, '0', { expires: 365 }) }
+    var saveSetting = function(){
+      var settingList = [0,1,2,3]
+      $.each(settingList,function(_, id){
+        var swi = $('#setting .switch_button[data-setting='+ id +']')
+        var setID = swi.attr('data-setting') - 0
+        if(swi.hasClass('open')){ $.cookie("setting" + setID, '1', { expires: 365 }) }
+        else{ $.cookie("setting" + setID, '0', { expires: 365 }) }
+      })
     }
     var refreshLink = function(){
       var changeTo6R = function(){
@@ -158,7 +163,7 @@
       var setID = $(this).attr('data-setting') - 0
       var value = !$(this).hasClass('open')
       setting(setID, value)
-      saveSetting(setID, value)
+      saveSetting()
       refreshLink()
     })
     var settingList = [1,2,3]
