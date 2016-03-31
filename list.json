@@ -5,6 +5,9 @@ callback({
       "url":"13513", "github": 0 }
   ],
   "message":[
+    { "name":"文字显示速度控制","describe":"",
+      "time":"20160331", "update_info":"修正快进对话时无法快进对话中暂停符号的问题",
+      "url":"11939", "github": 0 },
     { "name":"防止错按选项","describe":"",
       "time":"20160214", "update_info":"修正超过两个选项时按上键选择位置出错的问题",
       "url":"13655", "github": 0 },
@@ -26,9 +29,6 @@ callback({
     { "name":"对话显示图片","describe":"",
       "time":"20150202", "update_info":"公开",
       "url":"13999", "base": true, "github": 0 },
-    { "name":"文字显示速度控制","describe":"",
-      "time":"20141218", "update_info":"代码调整，功能增强",
-      "url":"11939", "github": 0 },
     { "name":"对话框光标","describe":"",
       "time":"20141206", "update_info":"调整代码",
       "url":"12749", "github": 0 },
