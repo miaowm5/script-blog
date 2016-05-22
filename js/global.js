@@ -51,8 +51,8 @@ siteGlobal.loadPublicPage = function(){
   $('#footer').html([
     '<div>',
       '<p>This page is designed by miaowm5(2016)</p>',
-      '<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=54202688" target="_blank">',
-        'Banner Picture: BEEK',
+      '<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=40308808" target="_blank">',
+        'Banner Picture: ポコ',
       '</a>',
     '</div>'
   ].join(''))
