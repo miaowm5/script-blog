@@ -41,19 +41,26 @@ siteGlobal.loadPublicPage = function(){
   $('#header').html([
     '<div class="viewport">',
       '<h1>喵呜喵5的原创脚本列表</h1>',
-      '<ul>',
-        '<li><a href="http://rm.66rpg.com/?291206">返回空间</a></li>',
-        '<li><a href="list.html">脚本列表</a></li>',
-        '<li><a href="order.html">脚本定制</a></li>',
-      '</ul>',
-    '</div>'
+      "<p>It's the only NEET thing to do</p>",
+    '</div>',
+    '<nav>',
+      '<div class="viewport">',
+        '<ul class="viewport">',
+          '<li><a href="http://rm.66rpg.com/?291206">返回空间</a></li>',
+          '<li><a href="list.html">脚本列表</a></li>',
+          '<li><a href="order.html">脚本定制</a></li>',
+        '</ul>',
+      '</div>',
+    '</nav>'
   ].join(''))
   $('#footer').html([
-    '<div>',
-      '<p>This page is designed by miaowm5(2016)</p>',
-      '<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=40308808" target="_blank">',
-        'Banner Picture: ポコ',
-      '</a>',
+    '<div class="viewport">',
+      '<div class="copyright">',
+        '<p>This page is designed by miaowm5(2016)</p>',
+        '<a href="http://www.pixiv.net/member_illust.php?mode=medium&illust_id=40308808" target="_blank">',
+          'Banner Picture: ポコ',
+        '</a>',
+      '</div>',
     '</div>'
   ].join(''))
   siteGlobal.loadState += 1
