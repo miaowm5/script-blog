@@ -102,15 +102,15 @@ callback({
       "url":"12642" }
   ],
   "system":[
+    { "name":"分解道具","describe":"",
+      "time":"20161116", "update_info":"分解成功后显示一个窗口展示分解结果",
+      "url":"14828", "base": true, "github": 0 },
     { "name":"阅读系统","describe":"",
       "time":"20160809", "update_info":"修正上一版引入的BUG",
       "url":"11732", "github": 0 },
     { "name":"变量商店","describe":"",
       "time":"20160528", "update_info":"重写代码",
       "url":"12019", "github": 0 },
-    { "name":"分解道具","describe":"",
-      "time":"20160522", "update_info":"修正单次分解时金钱限制无效的问题",
-      "url":"14828", "base": true, "github": 0 },
     { "name":"不公开配方的合成系统","describe":"",
       "time":"20160418", "update_info":"修正合成失败后插件扣除过多素材的问题",
       "url":"12220" },
