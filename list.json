@@ -205,7 +205,7 @@ callback({
   ],
   "event":[
     { "name":"事件指令功能加强","describe":"",
-      "time":"20160125", "update_info":"功能增加",
+      "time":"20161205", "update_info":"修改使用方法和功能，增加兼容性",
       "url":"12653", "github": 0 },
     { "name":"事件计时器","describe":"",
       "time":"20151117", "update_info":"修正存档时计时器消失的BUG，增加大量新功能",
