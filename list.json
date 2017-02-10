@@ -204,12 +204,12 @@ callback({
       "url":"12326" }
   ],
   "event":[
+    { "name":"事件计时器","describe":"",
+      "time":"20170210", "update_info":"修正存档时的安全报错",
+      "url":"14495", "github": 0 },
     { "name":"事件指令功能加强","describe":"",
       "time":"20161205", "update_info":"修改使用方法和功能，增加兼容性",
       "url":"12653", "github": 0 },
-    { "name":"事件计时器","describe":"",
-      "time":"20151117", "update_info":"修正存档时计时器消失的BUG，增加大量新功能",
-      "url":"14495", "github": 0 },
     { "name":"独立变量","describe":"",
       "time":"20150804", "update_info":"重写代码，简化用法",
       "url":"12327", "github": 0 },
