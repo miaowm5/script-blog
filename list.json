@@ -1,7 +1,7 @@
 callback({
   "base":[
     { "name":"基础脚本","describe":"",
-      "time":"20160320", "update_info":"修正读取备注时无法执行代码块的问题",
+      "time":"20170304", "update_info":"调整版本检查代码方便其他脚本使用",
       "url":"13513", "github": 0 }
   ],
   "message":[
@@ -49,12 +49,12 @@ callback({
       "url":"13214", "github": 0 }
   ],
   "map":[
+    { "name":"事件提示","describe":"",
+      "time":"20170304", "update_info":"更新代码以适应最新的基础脚本",
+      "url":"13986", "base": true, "github": 0 },
     { "name":"地图显示变量","describe":"",
       "time":"20160307", "update_info":"细节优化",
       "url":"12023", "base": true, "github": 0 },
-    { "name":"事件提示","describe":"",
-      "time":"20160306", "update_info":"防止一处罕见的报错",
-      "url":"13986", "base": true, "github": 0 },
     { "name":"死亡时行走图改变","describe":"",
       "time":"20160119", "update_info":"简化代码，提升兼容性",
       "url":"13514", "base": true, "github": 0 },
@@ -137,6 +137,9 @@ callback({
       "url":"12770" }
   ],
   "battle":[
+    { "name":"战斗回合数显示","describe":"",
+      "time":"20170304", "update_info":"更新代码以适应最新的基础脚本",
+      "url":"11956", "base": true, "github": 0 },
     { "name":"记录敌人击杀数","describe":"",
       "time":"20161016", "update_info":"修正无法清空全部敌人击杀数的BUG",
       "url":"14685", "github": 0 },
@@ -149,9 +152,6 @@ callback({
     { "name":"物理伤害反弹","describe":"",
       "time":"20151022", "update_info":"修正伤害公式永久改变的BUG",
       "url":"12336", "github": 0 },
-    { "name":"战斗回合数显示","describe":"",
-      "time":"20150519", "update_info":"修正地图显示变量脚本造成的BUG",
-      "url":"11956", "base": true, "github": 0 },
     { "name":"随机战斗渐变图","describe":"",
       "time":"20150211", "update_info":"调整代码，增强兼容性",
       "url":"11623", "github": 0 },
