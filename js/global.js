@@ -74,6 +74,7 @@ siteGlobal.checkLoad = function(targetState){
 }
 // setCommentBox
 siteGlobal.setCommentBox = function(){
+  return
   $('#comment').html([
     '<div class="big-title">',
       '<h1>发射言弹</h1>',
